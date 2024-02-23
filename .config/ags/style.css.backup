@@ -1,0 +1,64 @@
+/* custom color definitions */
+@define-color theme_light_blue #8CAAEE;
+
+window.topbar {
+    /*background-color: @theme_bg_color;*/
+    background-color: rgba(4, 30, 35, 0.7); /* glass effect without reducing opacity of child components (70% opacity) */
+    /*background-color: transparent;*/
+    color: @theme_fg_color;
+}
+
+button {
+    min-width: 1rem;
+    padding-top: 0;
+    padding-bottom: 0;
+    border-right: 0.15rem solid @theme_fg_color;
+    background-color: transparent;
+}
+
+button:active {
+    background-color: @theme_selected_bg_color;
+}
+
+button:hover {
+    border-bottom: 0.15rem solid @theme_fg_color;
+}
+
+label {
+    font-weight: bold;
+}
+
+.workspaces button.focused {
+    border-bottom: 0.25rem solid @theme_selected_bg_color;
+}
+
+.client-title {
+    color: @theme_text_color;
+}
+
+.notification {
+    color: yellow;
+}
+
+window.floating-dock .dock {
+    border-radius: 9.5;
+    padding: 15 / 2; }
+    window.floating-dock .dock separator {
+      border-radius: 2;
+      background-color: rgba(0, 0, 0, 0.2);
+      margin: 0 10.5;
+      min-width: 2px;
+      min-height: 2em; }
+    window.floating-dock .dock button .box {
+      margin: 5.25; }
+    window.floating-dock .dock button image {
+      margin: 10; }
+    window.floating-dock .dock button .indicator {
+      min-width: 8px;
+      min-height: 8px;
+      background-color: black;
+      border-radius: 2;
+      margin-bottom: 10/2; }
+      window.floating-dock .dock button .indicator.focused {
+        background-image: red; }
+  
