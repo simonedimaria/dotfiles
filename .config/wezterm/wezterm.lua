@@ -34,7 +34,7 @@ config.color_scheme = 'Spacedust'
 config.font = wezterm.font("JetBrains Mono", {weight="Regular", stretch="Normal", style="Normal"})
 
 -- Temporary fix for https://github.com/wez/wezterm/issues/4483
-config.enable_wayland = true
+config.enable_wayland = false
 config.front_end = "OpenGL"
 
 -- Window decorations
