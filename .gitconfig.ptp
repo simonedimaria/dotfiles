@@ -1,0 +1,6 @@
+[user]
+	email = 117766011+perrythepwner@users.noreply.github.com
+	signingKey = 4DCD5CE47AFB2EDC
+
+[url "git@ptp-github.com"]
+ 	insteadOf = git@github.com
