@@ -1,0 +1,22 @@
+/* custom color definitions */
+//@define-color theme_light_blue #8CAAEE;
+
+window.topbar {
+    background-color: $bg_color;
+    background-color: rgba(4, 30, 35, 0.7); /* glass effect without reducing opacity of child components (70% opacity) */
+    /*background-color: transparent;*/
+    color: $fg_color;
+}
+
+//.workspaces button.focused {
+//    border-left: 0.25rem solid $popover-border-color; 
+//    border-bottom: 0.25rem solid $popover-border-color; 
+//}
+
+//.client-title {
+//    color: $fg_color;
+//}
+
+.notification {
+    color: yellow;
+}

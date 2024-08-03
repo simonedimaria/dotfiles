@@ -1,0 +1,25 @@
+// dock variables
+$spacing: 10;
+$radii: 14;
+$padding: 3px;
+$color-scheme: 'dark';
+$fg-color: white;
+$bg-color: rgba(4, 30, 35, 1);
+$drop-shadow: true;
+$popover-padding-multiplier: 1;
+$popover-padding: $padding * $popover-padding-multiplier;
+$popover-radius: if($radii == 0, 0, $radii + $popover-padding);
+$popover-border-color: #D65900;
+$shadow: #D65900;
+$border-width: 2px;
+$border-color: rgba(4, 30, 35, 1);
+$text-shadow: red;
+
+// button variables
+$accent: blue;
+$accent-fg: white;
+$hover: rgba(4, 30, 35, 1);
+$hover-fg: white;
+$active-gradient: orange;
+//$widget-bg: black;
+$transition: 'slide_right';

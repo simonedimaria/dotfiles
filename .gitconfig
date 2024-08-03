@@ -1,0 +1,20 @@
+[core]
+	editor = vim
+[init]
+	defaultBranch = main
+[commit]
+  	gpgsign = true
+[user]
+	email = 12881861+simonedimaria@users.noreply.github.com
+	name = simonedimaria
+   	useConfigOnly = true
+[include]
+  	path = ~/.gitconfig.sdm
+
+[includeIf "gitdir:~/progetti/SDM/"]
+ 	path = ~/.gitconfig.sdm
+
+[includeIf "gitdir:~/progetti/PTP/"]
+  	path = ~/.gitconfig.ptp
+[pull]
+	ff = true
