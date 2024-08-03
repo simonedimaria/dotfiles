@@ -26,7 +26,7 @@ jobs:
       run: git clone https://github.com/romkatv/zsh-bench.git
 
     - name: Run zsh-bench
-      run: ./zsh-bench/zsh-bench.sh > zsh-bench-results.txt
+      run: ./zsh-bench/zsh-bench > zsh-bench-results.txt
 
     - name: Upload Benchmark Results
       uses: actions/upload-artifact@v3
