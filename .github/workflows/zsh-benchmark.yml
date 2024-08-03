@@ -1,0 +1,35 @@
+name: Manual workflow
+
+on:
+  push:
+    paths:
+      - '**/*.zsh'       # Trigger the action when any .zsh file is pushed
+      - '.zshrc'         # Trigger the action when .zshrc is pushed
+      - '.zshenv'        # Trigger the action when .zshenv is pushed
+      - '.zlogin'        # Trigger the action when .zlogin is pushed
+      - '.zlogout'       # Trigger the action when .zlogout is pushed
+
+jobs:
+  benchmark:
+    runs-on: ubuntu-22.04
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Set up dependencies
+      run: |
+        sudo apt-get update -y &&
+        sudo apt-get install -y zsh curl git
+        
+    - name: Clone zsh-bench
+      run: git clone https://github.com/romkatv/zsh-bench.git
+
+    - name: Run zsh-bench
+      run: ./zsh-bench/zsh-bench.sh > zsh-bench-results.txt
+
+    - name: Upload Benchmark Results
+      uses: actions/upload-artifact@v3
+      with:
+        name: zsh-bench-results
+        path: zsh-bench-results.txt
