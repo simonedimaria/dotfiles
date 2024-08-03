@@ -31,7 +31,8 @@ config.color_scheme = 'Spacedust'
 
 -- Font
 --config.font = wezterm.font("FiraCode Nerd Font Mono", {weight="Regular", stretch="Normal", style="Normal"})
-config.font = wezterm.font("JetBrains Mono", {weight="Regular", stretch="Normal", style="Normal"})
+--config.font = wezterm.font("JetBrains Mono", {weight="Regular", stretch="Normal", style="Normal"})
+config.font = wezterm.font("JetBrainsMono Nerd Font Mono", {weight="Medium", stretch="Normal", style="Normal"})
 config.font_size = 15
 
 -- Temporary fix for https://github.com/wez/wezterm/issues/4483
