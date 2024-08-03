@@ -14,8 +14,8 @@ bindkey -v
 # The following lines were added by compinstall
 zstyle :compinstall filename '/home/simone/.zshrc'
 # enable autocompletion
-#autoload -Uz compinit
-#compinit
+autoload -Uz compinit
+compinit
 # End of lines added by compinstall
 
 
