@@ -14,8 +14,8 @@ bindkey -v
 # The following lines were added by compinstall
 zstyle :compinstall filename '/home/simone/.zshrc'
 # enable autocompletion
-autoload -Uz compinit
-compinit
+#autoload -Uz compinit
+#compinit
 # End of lines added by compinstall
 
 
@@ -43,5 +43,7 @@ source <(fzf --zsh)
 ###############
 alias config='/usr/bin/git --git-dir=/home/simone/.cfg/ --work-tree=/home/simone'
 alias ls='ls --color=auto'
+alias lla='ls -lah'
+alias cl='clear'
 alias grep='grep --color=auto'
 alias pkill="pkill -f"
