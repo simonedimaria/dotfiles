@@ -11,10 +11,10 @@
 [include]
   	path = ~/.gitconfig.sdm
 
-[includeIf "gitdir:~/progetti/SDM/"]
+[includeIf "gitdir:~/Projects/SDM/"]
  	path = ~/.gitconfig.sdm
 
-[includeIf "gitdir:~/progetti/PTP/"]
+[includeIf "gitdir:~/Projects/PTP/"]
   	path = ~/.gitconfig.ptp
 [pull]
 	ff = true
