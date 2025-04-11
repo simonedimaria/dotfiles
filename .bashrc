@@ -27,3 +27,5 @@ alias config='/usr/bin/git --git-dir=/home/simone/.cfg/ --work-tree=/home/simone
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 alias pkill="pkill -f"
+alias gparted="sudo -E gparted"
+
