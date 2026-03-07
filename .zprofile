@@ -4,3 +4,5 @@
 # this file is used for executing user's commands at start, will be read when starting as a login shell. Typically used to autostart graphical sessions and to set session-wide environment variables.
 
 
+
+export PATH="/home/simone/.local/share/solana/install/active_release/bin:$PATH"

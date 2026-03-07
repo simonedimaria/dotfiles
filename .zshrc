@@ -18,14 +18,22 @@ bindkey -v                  # vi mode (vim keybinds), change to '-e' for emacs m
 bindkey "^[[Z" magic-space  # shift-tab to bypass completion
 bindkey "^[[1;5D" backward-word
 bindkey "^[[1;5C" forward-word
+bindkey "^[[3;5~" kill-word
 # End of lines configured by zsh-newuser-install
 
 # The following lines were added by compinstall
 zstyle :compinstall filename '/home/simone/.zshrc'
 # enable autocompletion
-autoload -Uz compinit && compinit
+autoload -Uz compinit && compinit -u
 _comp_options+=(globdots) # autocomplete also dotfiles
 # End of lines added by compinstall
+
+# plugins
+# autojump
+source /etc/profile.d/autojump.sh
+
+# autosuggestions
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 ##################
 ### Extensions ###
@@ -71,6 +79,13 @@ alias grep='grep --color=auto'
 alias pgrep='pgrep --full'
 alias pkill="pkill --echo --full"
 alias tree="tree -C"
+alias tn="tmux new-session -s"
+alias tl="tmux list-sessions"
+alias ta="tmux attach-session"
+alias td="tmux detach"
+alias tkill="tmux kill-session -t"
+alias tquit="tmux kill-session"
+alias gparted="sudo -E gparted"
 
 #################
 ### FUNCTIONS ###
@@ -84,3 +99,10 @@ mkvenv() {
         source venv/bin/activate
     fi
 }
+
+export PATH="$PATH:/home/simone/.bifrost/bin"
+export PATH="$HOME/.local/share/solana/install/active_release/bin:$PATH"
+
+
+## syntax highlighting
+source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
